@@ -2,14 +2,17 @@ import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 
 export const FiltersScreen = (props) => {
-  return;
-  <View style={styles.screen}>
-    <Text>The Filters Screen</Text>
-  </View>;
+  return (
+    <View style={styles.screen}>
+      <Text>The Filters Screen</Text>
+    </View>
+  );
 };
 
 const styles = StyleSheet.create({
-  flex: 1,
-  justifyContent: "center",
-  alignItems: "center",
+  screen: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
 });

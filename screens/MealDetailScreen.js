@@ -1,15 +1,24 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, Button } from "react-native";
 
-export const MealDetailScreen = (props) => {
-  return;
-  <View style={styles.screen}>
-    <Text>The Meal Detail Screen</Text>
-  </View>;
+export const MealDetailScreen = props => {
+  return (
+    <View style={styles.screen}>
+      <Text>The Meal Detail Screen</Text>
+      <Button
+        title="Go back to categories"
+        onPress={() => {
+          props.navigation.popToTop();
+        }}
+      />
+    </View>
+  );
 };
 
 const styles = StyleSheet.create({
-  flex: 1,
-  justifyContent: "center",
-  alignItems: "center",
+  screen: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center"
+  }
 });
