@@ -15,6 +15,7 @@ const MealsNavigator = createStackNavigator(
     }
   },
   {
+    //initialRouteName: "MealDetailsScreen",
     defaultNavigationOptions: {
       headerStyle: {
         backgroundColor:

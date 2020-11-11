@@ -6,6 +6,9 @@ import MealsNavigation from "./navigation/MealsNavigation";
 
 import openSans from "./assets/fonts/OpenSans-Regular.ttf";
 import openSansBold from "./assets/fonts/OpenSans-Bold.ttf";
+import { enableScreens } from "react-native-screens";
+
+enableScreens();
 
 async function fetchFonts() {
   await Font.loadAsync({
@@ -19,10 +22,10 @@ export default function App() {
 
   if (!fontLoading) {
     return (
-        <AppLoading
-            startAsync={fetchFonts}
-            onFinish={() => setFontLoading(true)}
-        />
+      <AppLoading
+        startAsync={fetchFonts}
+        onFinish={() => setFontLoading(true)}
+      />
     );
   }
 
